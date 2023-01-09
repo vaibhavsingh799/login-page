@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login hover</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background: black;
+    }
+    section {
+        position: absolute;
+        /* top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%); */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        flex-wrap: wrap;
+    }
+    .container{
+        background: #110f0f;
+        width: 300px;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        padding: 40px 20px;
+        border-radius: 5px;
+        z-index: 2;
+    }
+    .sign{
+        color: #04fa04;
+        font-weight: 900;   
+        font-size: 29px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        cursor: pointer;
+    }
+    .username{
+        display: flex;
+        flex-direction: column ;
+        color: white;
+        
+    }
+
+    .username input{
+        background: #494444b0;
+        border: 0;
+        outline: 0;
+        /* height: 40px; */
+        padding: 22px 10px 7.5px;
+        width: 230px;
+        border-radius: 3px;
+        color: white;
+    }
+    .username i{
+        position: absolute;
+        padding: 11px 8px;
+        font-style: normal;
+        color: #aaa;
+        transition: 0.5s;
+        pointer-events: none;
+    }
+    .username input:focus~i,
+    .username input:valid~i{
+        transform: translateY(-9px);
+        font-size: 0.8em;
+        color: #fff;
+    }
+    .links{
+        display: flex;
+        justify-content: space-between;
+        width: 232px;
+    }
+    .links a{
+        text-decoration: none;
+        color: white;
+
+    }
+    .links :nth-child(2){
+        color: #04fa04;
+    }
+
+    .submit input{
+        background: #04fa04;
+        width: 252px;
+        border: 0;
+        outline: 0;
+        height: 40px;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+    span{
+        width: calc(5vw - 2px);
+        height: calc(5vw - 2px);
+        background: #201c1c;
+        margin: 0.5px;
+        /* position: relative; */
+        display: flex;
+        /* gap: 2px; */
+        transition: 3s;
+        z-index: 1;
+    }
+    span:hover{
+        background: #04fa04;
+        transition: 0s;
+    }
+    section::before{
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background: linear-gradient(black,#04fa04,black);
+        animation: vaibhav 5s linear infinite;
+    }
+    @keyframes vaibhav {
+        0%{
+            transform: translateY(-100%);
+        }
+        100%{
+            transform: translateY(100%);
+        }
+    }
+</style>
+<body>
+    <section>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+
+        <div class="container">
+            <div class="sign">
+                <p>SIGN IN</p>
+            </div>
+
+            <div class="username">
+                <input type="text" required> <i>Username</i>
+            </div>
+            <div class="username">
+                <input type="password" required> <i>password</i>
+            </div>
+
+            <div class="links">
+                <a href="#">Forget Password</a>
+                <a href="#">Sign up</a>
+            </div>
+
+            <div class="submit">
+                <input type="submit" value="Submit">
+            </div>
+        </div>
+    </section>
+</body>
+</html>
